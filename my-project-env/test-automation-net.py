@@ -11,5 +11,7 @@ device = {
 } 
 
 net_connect = ConnectHandler(**device)
-output = net_connect.send_command("show  interface status")
+output = net_connect.send_command("show  interface status | inc connected)")
+output = net_connect.send_command("show  ip interface brief ")
+output = net_connect.send_command("show  run")
 print(output) 
