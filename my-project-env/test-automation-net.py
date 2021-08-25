@@ -6,8 +6,8 @@ host = input("Enter your hostname: ")
 device = { 
     'device_type': 'cisco_nxos',
     'host': host,
-    'username': admin,
-    'password': admin,
+    'username': "admin",
+    'password': "admin",
 } 
 
 net_connect = ConnectHandler(**device)
